@@ -69,18 +69,17 @@ class Renderer {
 	// framebuffer:  canvas ctx image data
     drawSlide3(framebuffer) {
 		//J
-		this.drawLine({x: 200, y: 500}, {x: 400 y: 500}, [235, 80, 35, 255], framebuffer);
-		this.drawLine({x: 300, y: 500}, {x: 300, y: 350}, [235, 80, 35, 255], framebuffer);
-		this.drawBezierCurve({x: 300, y: 350}, {x: 300, y: 300},{x: 200, y: 300}, {x: 200, y: 350}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 200, y: 450}, {x: 200, y: 290}, [235, 80, 35, 255], framebuffer);
+		this.drawBezierCurve({x: 200, y: 290}, {x: 200, y: 240},{x: 100, y: 240}, {x: 100, y: 290}, [235, 80, 35, 255], framebuffer);
 		//a
-		this.drawCircle({x: 450, y: 350}, 50, [235, 80, 35, 255], framebuffer);
-		this.drawLine({x: 500, y: 350}, {x: 500, y: 300}, [235, 80, 35, 255], framebuffer);
+		this.drawCircle({x: 350, y: 300}, 48, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 397, y: 320}, {x: 397, y: 250}, [235, 80, 35, 255], framebuffer);
 		//c
-		this.drawBezierCurve({x: 650, y: 300}, {x: 585, y: 300},{x: 585, y: 400}, {x: 650, y: 400}, [235, 80, 35, 255], framebuffer);
+		this.drawBezierCurve({x: 550, y: 255}, {x: 485, y: 230},{x: 485, y: 350}, {x: 550, y: 335}, [235, 80, 35, 255], framebuffer);
 		//k
-		this.drawLine({x: 750, y: 300}, {x: 750, y: 475}, [235, 80, 35, 255], framebuffer);
-		this.drawLine({x: 750, y: 350}, {x: 825, y: 300}, [235, 80, 35, 255], framebuffer);
-		this.drawLine({x: 750, y: 350}, {x: 825, y: 425}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 650, y: 250}, {x: 650, y: 425}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 650, y: 300}, {x: 725, y: 250}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 650, y: 300}, {x: 725, y: 375}, [235, 80, 35, 255], framebuffer);
     }
 	drawShowPoint(center, radius, color, framebuffer){
 		var num_pts = 10;
