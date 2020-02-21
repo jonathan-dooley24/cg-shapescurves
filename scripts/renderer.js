@@ -57,7 +57,7 @@ class Renderer {
 		this.drawCircle(center, radius, color, framebuffer);
     }
     // framebuffer:  canvas ctx image data
-    drawSlide2(framebuffer) {
+    drawSlide2(framebuffer) {     
 		var pt0, pt1, pt2, pt3, color;
 		pt0 = {x: 100, y: 100}
 		pt1 = {x: 150, y: 400}
@@ -68,7 +68,19 @@ class Renderer {
     }
 	// framebuffer:  canvas ctx image data
     drawSlide3(framebuffer) {
-
+		//J
+		this.drawLine({x: 200, y: 500}, {x: 400 y: 500}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 300, y: 500}, {x: 300, y: 350}, [235, 80, 35, 255], framebuffer);
+		this.drawBezierCurve({x: 300, y: 350}, {x: 300, y: 300},{x: 200, y: 300}, {x: 200, y: 350}, [235, 80, 35, 255], framebuffer);
+		//a
+		this.drawCircle({x: 450, y: 350}, 50, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 500, y: 350}, {x: 500, y: 300}, [235, 80, 35, 255], framebuffer);
+		//c
+		this.drawBezierCurve({x: 650, y: 300}, {x: 585, y: 300},{x: 585, y: 400}, {x: 650, y: 400}, [235, 80, 35, 255], framebuffer);
+		//k
+		this.drawLine({x: 750, y: 300}, {x: 750, y: 475}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 750, y: 350}, {x: 825, y: 300}, [235, 80, 35, 255], framebuffer);
+		this.drawLine({x: 750, y: 350}, {x: 825, y: 425}, [235, 80, 35, 255], framebuffer);
     }
 	drawShowPoint(center, radius, color, framebuffer){
 		var num_pts = 10;
@@ -114,7 +126,7 @@ class Renderer {
 		
     }
 	// center:       object ({x: __, y: __})
-    // radius:       int
+    // radius:       int 
     // color:        array of int [R, G, B, A]
     // framebuffer:  canvas ctx image data
     drawCircle(center, radius, color, framebuffer) {
